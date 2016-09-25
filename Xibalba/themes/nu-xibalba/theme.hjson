@@ -1,0 +1,557 @@
+{
+	info: {
+		name: Xibalba
+		desc: Theme for Xibalba BBS
+		author: NuSkooler
+	}
+
+	customization: {
+		defaults: {
+			general: {
+				passwordChar: φ
+			}
+		}
+
+		menus: {
+			matrix: {
+				mci: {
+					VM1: {						
+						items: [ "l o g i n", "a p p l y", "r u n" ]
+					}
+				}
+			}
+
+			login: {
+				mci: {
+					ET1: { width: 21 }
+					ET2: { width: 21 }
+				}
+			}
+
+			newUserApplication: {
+				mci: {
+					ET1: { width: 26 }
+					ET2: { width: 26 }
+					ET5: { width: 26 }
+					ET6: { width: 26 }
+					
+					ET7: { width: 27 }
+					ET8: { width: 27 }
+					ET9: { width: 27 }
+					ET10: { width: 27 }
+
+					TM12: {
+						focusTextStyle: upper
+						styleSGR1: |00|08
+					}
+				}
+			}
+
+			newUserApplicationSsh: {
+				mci: {
+					ET1: { width: 26 }
+					ET2: { width: 26 }
+					ET5: { width: 26 }
+					ET6: { width: 26 }
+					
+					ET7: { width: 27 }
+					ET8: { width: 27 }
+					ET9: { width: 27 }
+					ET10: { width: 27 }
+
+					TM12: {
+						focusTextStyle: upper
+						styleSGR1: |00|08
+					}
+				}
+			}
+
+			newUserFeedbackToSysOp: {
+				0: {
+					mci: {
+						TL1: { width: 19, textOverflow: "..." }
+						ET2: { width: 19, textOverflow: "..." }
+						ET3: { width: 19, textOverflow: "..." }
+					}
+				}
+				1: {
+					mci: {
+						MT1: { height: 14 }
+					}
+				}
+				2: {
+					mci: {
+						TL1: {
+							styleSGR1: |00|08
+						}
+					}
+				}
+				3: {
+					mci: {
+						HM1: { 
+							focusTextStyle: upper
+						}
+					}
+				}
+			}
+
+			fullLoginSequenceLastCallers: {
+				config: {
+					listFormat: "|00|16|12{userName:<17.17}|04{location:<20.20}|12{affils:<18.18}|04{ts:18}"
+					dateTimeFormat: MMM Do h:mma
+				}
+				mci: {
+					VM1: { height: 13 }
+				}
+			}
+
+			fullLoginSequenceOnelinerz: {
+				config: {
+					listFormat: "|00|04{oneliner:<58.58} |08(|16|12{username:<12}|08)"
+				}
+				0: {
+					mci: {
+						VM1: { height: 10 }
+						TM2: {
+							focusTextStyle: upper
+							items: [ "yes", "no" ]
+						}						
+					}
+				}
+				1: {
+					mci: {
+						ET1: { width: 60 }
+						TL2: { width: 60 }
+						TM3: {
+							focusTextStyle: upper
+						}
+					}
+				}
+			}
+
+			mainMenuLastCallers: {
+				config: {
+					listFormat: "|00|16|12{userName:<17.17}|04{location:<20.20}|12{affils:<18.18}|04{ts:18}"
+					dateTimeFormat: MMM Do h:mma
+				}
+				mci: {
+					VM1: { height: 13 }
+				}
+			}
+
+			fullLoginSequenceWhosOnline: {
+				config: {
+					listFormat: "|00|16|04{node:<3.3}|12{userName:<18.18}|04{affils:<19.19}|12{action:<21.21}|04{timeOn:<8}"
+				}
+				mci: {
+					VM1: { height: 10 }
+				}
+			}
+
+			mainMenuWhosOnline: {
+				config: {
+					listFormat: "|00|16|04{node:<3.3}|12{userName:<18.18}|04{affils:<19.19}|12{action:<21.21}|04{timeOn:<8}"
+				}
+				mci: {
+					VM1: { height: 10 }
+				}
+			}
+
+			mainMenuUserList: {
+				config: {
+					listFormat: "|00|12{userName:<16.16} |04{affils:<20.20}|12 {location:<18.18}|04 {lastLoginTs:<18.18}"
+					focusListFormat: "|00|14{userName:<16.16} {affils:<20.20} {location:<18.18} {lastLoginTs:<18.18}"
+					dateTimeFormat: MMM Do h:mma
+				}
+				mci: {
+					VM1: { height: 13 }
+				}
+			}
+
+			mainMenuUserConfig: {
+				mci: {
+					ET1: { width: 29 }
+					ME2: { width: 29 }
+					ME3: { width: 29 }
+					ET4: { width: 29 }
+					ET5: { width: 29 }
+					ET6: { width: 29 }
+					ET7: { width: 29 }
+					ET8: { width: 29 }
+					ET9: { width: 29 }
+					ET10: { width: 21 }
+					ET11: { width: 21 }
+					TL20: { width: 72 }
+					TL21: { width: 72 }
+
+					TM25: {
+						focusTextStyle: upper
+					}
+				}
+			}
+
+			mainMenuFeedbackToSysOp: {
+				0: {
+					mci: {
+						TL1: { width: 19, textOverflow: "..." }
+						ET2: { width: 19, textOverflow: "..." }
+						ET3: { width: 19, textOverflow: "..." }
+					}
+				}
+				1: {
+					mci: {
+						MT1: { height: 14 }
+					}
+				}
+				2: {
+					mci: {
+						TL1: {
+							styleSGR1: |00|08
+						}
+					}
+				}
+				3: {
+					mci: {
+						HM1: { 
+							focusTextStyle: upper
+						}
+					}
+				}
+			}
+
+			mainMenuOnelinerz: {
+				config: {
+					listFormat: "|00|04{oneliner:<58.58} |08(|16|12{username:<12}|08)"
+				}
+				0: {
+					mci: {
+						VM1: { height: 10 }
+						TM2: {
+							focusTextStyle: upper
+							items: [ "yes", "no" ]
+						}						
+					}
+				}
+				1: {
+					mci: {
+						ET1: { width: 60 }
+						TL2: { width: 60 }
+						TM3: {
+							focusTextStyle: upper
+						}
+					}
+				}
+			}
+
+			mainMenuRumorz: {
+				config: {
+					listFormat:      "|00|04  {rumor}"
+					focusListFormat: "|00|12> |04{rumor}"
+				}
+				0: {
+					mci: {
+						VM1: { height: 8 }
+						TM2: {
+							focusTextStyle: upper
+							items: [ "yes", "no" ]
+						}						
+					}
+				}
+				1: {
+					mci: {
+						ET1: { width: 60 }
+						TL2: { width: 60 }
+						TM3: {
+							focusTextStyle: upper
+						}
+					}
+				}
+			}
+
+			bbsList: {
+				config: {
+					listFormat: "|00|04  {bbsName}"
+					focusListFormat: "|00|12> |14{bbsName!styleUpper}"
+					youSubmittedFormat: "|00|07{submitter} |08(|12You!|08)"
+				}
+				0: {
+					mci: {
+						VM1: {
+							height: 8
+							width: 32
+							focusTextStyle: upper
+						}
+						TL2: { width: 22 }
+						TL3: { width: 22 }
+						TL6: { width: 22 }
+						TL9: { width: 22 }
+
+						TL4: { width: 29 }
+						TL5: { width: 29 }
+						TL7: { width: 29 }
+						TL8: { width: 29 }
+					}
+				},
+				1: {
+					mci: {
+						ET1: { width: 32 }
+						ET2: { width: 32 }
+						ET3: { width: 32 }
+						ET4: { width: 32 }
+						ET5: { width: 32 }
+						ET6: { width: 32 }
+						ET7: { width: 32 }
+						ET8: { width: 32 }
+
+						TM17: {
+							focusTextStyle: upper
+						}
+					}
+				}
+			}
+
+			messageAreaViewPost: {
+				0: {
+					mci: {
+						TL1: { 
+							width: 19
+							textOverflow: ... 
+						}
+						TL2: {
+							width: 19
+							textOverflow: ...
+						}
+						TL3: { 
+							width: 19
+							textOverflow: ...
+						}
+						TL5: { 
+							width: 19
+							textOverflow: ...
+						}
+					}
+				}
+				1: {
+					mci: {
+						MT1: { height: 14 }
+					}
+				}
+				4: {
+					mci: {
+						HM1: {
+							focusTextStyle: upper
+						}
+					}
+				}
+			}
+
+
+			messageAreaNewPost: {
+				0: {
+					mci: {
+						TL1: { width: 19, textOverflow: "..." }
+						ET2: { width: 19, textOverflow: "..." }
+						ET3: { width: 19, textOverflow: "..." }
+					}
+				}
+				1: {
+					mci: {
+						MT1: { height: 14 }
+					}
+				}
+				2: {
+					mci: {
+						TL1: {
+							styleSGR1: |00|08
+						}
+					}
+				}
+				3: {
+					mci: {
+						HM1: { 
+							focusTextStyle: upper
+						}
+					}
+				}
+			}
+
+			messageAreaReplyPost: {
+				config: {
+					quoteDateTimeFormat: dddd, MMMM Do
+					quoteFormats: [
+						"On {dateTime} {userName} muttered...",
+						"On {dateTime} {userName} was heard saying...",
+					]
+				}
+				0: {
+					mci: {
+						TL1: { width: 19, textOverflow: "..." }
+						ET2: { width: 19, textOverflow: "..." }
+						ET3: { width: 19, textOverflow: "..." }
+						TL4: { width: 25, textOverflow: "..." }
+					}
+				}
+				1: {
+					mci: {
+						HM1: {
+							focusTextStyle: upper
+						}
+					}
+				}
+				2: {
+					mci: {
+						TL1: {
+							styleSGR1: |00|08
+						}
+					}
+				}
+				3: {
+					mci: {
+						HM1: { 
+							focusTextStyle: upper
+						}
+					}
+				}
+			}
+
+			messageAreaChangeCurrentConference: {
+				config: {
+					listFormat: "|00|04  {name}"
+					focusListFormat: "|00|12> |14{name}"
+				}
+				mci: {
+					VM1: {
+						width: 30
+						height: 10	
+					}
+				}
+			}
+
+			messageAreaChangeCurrentArea: {
+				config: {
+					listFormat: "|00|04  {name}"
+					focusListFormat: "|00|12> |14{name}"
+				}
+				mci: {
+					VM1: {
+						width: 30
+						height: 10
+					}
+				}
+			}
+
+			messageAreaMessageList: {
+				config: {
+					listFormat:      "|00|04  {msgNum:<4.4} |12{subject:<30.29} |04{toUserName:<13.12}|12 {fromUserName:<13.12} |04{ts:<12.12} |10{newIndicator}"
+					focusListFormat: "|00|12> |14{msgNum:<4.4} {subject:<30.29} {toUserName:<13.12} {fromUserName:<13.12} {ts:<12.12} |10{newIndicator}"
+					messageInfo1Format: "|00|02{msgNumSelected:>4.4} |08/ |02{msgNumTotal:<4.4}"
+					//	Fri Sep 25th
+					dateTimeFormat: ddd MMM Do
+				}
+				mci: {
+					VM1: {
+						height: 14
+					}
+					TL6: {
+						text: "|00|15|MA |08@ |07|MC"
+					}
+				}
+			}
+
+			mailMenuCreateMessage: {
+				0: {
+					mci: {
+						TL1: { width: 19, textOverflow: "..." }
+						ET2: { width: 19, textOverflow: "..." }
+						ET3: { width: 19, textOverflow: "..." }
+					}
+				}
+				1: {
+					mci: {
+						MT1: { height: 14 }
+					}
+				}
+				2: {
+					mci: {
+						TL1: {
+							styleSGR1: |00|08
+						}
+					}
+				}
+				3: {
+					mci: {
+						HM1: { 
+							focusTextStyle: upper
+						}
+					}
+				}
+			}
+
+			mailMenuInbox: {
+				config: {
+					listFormat: "|00|04  {msgNum:<5.5}|12{subject:<28.27} |04{fromUserName:<20.20} {ts:<13.13} |10{newIndicator}"
+					focusListFormat: "|00|12> |14{msgNum:<5.5}{subject:<28.27} {fromUserName:<20.20} {ts:<13.13} |10{newIndicator}"
+					dateTimeFormat: ddd MMM Do					
+				}
+				mci: {
+					VM1: {
+						height: 13
+					}
+					TL5: { width: 4 }
+				}
+			}
+
+			newScanMessageList: {
+				config: {
+					listFormat:      "|00|04  {msgNum:<4.4} |12{subject:<30.29} |04{toUserName:<13.12}|12 {fromUserName:<13.12} |04{ts:<12.12} |10{newIndicator}"
+					focusListFormat: "|00|12> |14{msgNum:<4.4} {subject:<30.29} {toUserName:<13.12} {fromUserName:<13.12} {ts:<12.12} |10{newIndicator}"
+					messageInfo1Format: "|00|02{msgNumSelected:>4.4} |08/ |02{msgNumTotal:<4.4}"
+					//	Fri Sep 25th
+					dateTimeFormat: ddd MMM Do
+				}
+				mci: {
+					VM1: {
+						height: 13
+					}
+					TL6: {
+						text: "|00|15|MA |08@ |07|MC"
+					}
+				}
+			}
+		}
+
+		prompts: {
+			menuCommand: {
+				mci: {
+					TL1: {
+						text: "|00|12|UN |08@ |12|MD|08 - |04|CT |08on |04node |12|ND"
+					}
+				}
+			}
+
+			messageMenuCommand: {
+				mci: {
+					TL1: {
+						text: "|00|12|MD|08: |04|MA |08@ |04|MC  |08-  |04|CT |08on |04node |12|ND"
+					}
+				}
+			}
+
+			logoffConfirmation: {
+				mci: {
+					TM1: {
+						focusTextStyle: upper
+					}
+				}
+			}
+
+			loginGlobalNewScan: {
+				mci: {
+					TM1: {
+						focusTextStyle: upper
+					}
+				}
+			}
+		}
+	}
+}
