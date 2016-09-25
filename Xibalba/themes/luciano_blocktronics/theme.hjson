@@ -1,0 +1,498 @@
+{
+	info: {
+		name: Mystery Skull
+		author: Luciano Ayres
+		group: blocktronics
+	}
+
+	customization: {
+
+		defaults: {
+			general: {
+				passwordChar: *
+			}
+
+			dateTimeFormat: {
+				short: MMM Do h:mm a
+			}
+		}
+
+		menus: {
+			matrix: {
+				mci: {
+					VM1: {
+						focusTextStyle: first lower
+					}
+				}
+			}
+
+			newUserApplication: {
+				mci: {
+					ET1: { width: 23 }
+					ET2: { width: 23 }
+					ET5: { width: 23 }
+					ET6: { width: 23 }
+					
+					ET7: { width: 23 }
+					ET8: { width: 23 }
+					ET9: { width: 23 }
+					ET10: { width: 23 }
+
+					TM12: {
+						focusTextStyle: first lower
+					}
+				}
+			}
+			
+			newUserApplicationSsh: {
+				mci: {
+					ET1: { width: 23 }
+					ET2: { width: 23 }
+					ET5: { width: 23 }
+					ET6: { width: 23 }
+					
+					ET7: { width: 23 }
+					ET8: { width: 23 }
+					ET9: { width: 23 }
+					ET10: { width: 23 }
+
+					TM12: {
+						focusTextStyle: first lower
+					}
+				}
+			}
+
+			newUserFeedbackToSysOp: {
+				0: {
+					mci: {
+						TL1: { width: 19, textOverflow: "..." }
+						ET2: { width: 19, textOverflow: "..." }
+						ET3: { width: 19, textOverflow: "..." }
+					}
+				}
+				1: {
+					mci: {
+						MT1: { height: 14 }
+					}
+				}
+			}
+
+			login: {
+				mci: {
+					ET1: { width: 14 }
+					ET2: { width: 14 }
+				}
+			}
+
+			fullLoginSequenceOnelinerz: {
+				config: {
+					listFormat: "|00|11{username:<12}|08: |03{oneliner:<59.58}"
+				}
+				0: {
+					mci: {
+						VM1: { height: 10 }
+						TM2: {
+							focusTextStyle: first lower
+						}						
+					}
+				}
+				1: {
+					mci: {
+						ET1: { width: 60 }
+						TL2: { width: 60 }
+						TM3: {
+							focusTextStyle: first lower
+						}
+					}
+				}
+			}
+
+			mainMenuUserStats: {
+				mci: {
+					UN1: { width: 17 }
+					UR2: { width: 17 }
+					LO3: { width: 17 }
+					UF4: { width: 17 }
+					UG5: { width: 17 }
+					UT6: { width: 17 }
+					UC7: { width: 17 }
+					ST8: { width: 17 }
+				}
+			}
+
+			mainMenuSystemStats: {
+				mci: {
+					BN1: { width: 17 }
+					VL2: { width: 17 }
+					OS3: { width: 33 }
+					SC4: { width: 33 }
+					DT5: { width: 33 }
+					CT6: { width: 33 }
+					AN7: { width: 6 }
+					ND8: { width: 6 }
+					TC9: { width: 6 }
+				}
+			}
+
+
+			mainMenuLastCallers: {
+				config: {
+					listFormat: "|00|11{userName:<17.17}|03{location:<20.20}|11{affils:<17.17}|03{ts:<15}"
+					dateTimeFormat: MMM Do h:mma
+				}
+				mci: {
+					VM1: { height: 10 }
+				}
+			}
+
+			mainMenuUserList: {
+				config: {
+					listFormat: "|00|11{userName:<17.17}|03{affils:<21.21}|11{note:<19.19}|03{lastLoginTs}"
+					focusListFormat: "|00|19|15{userName:<17.17}{affils:<21.21}{note:<19.19}{lastLoginTs}"
+					dateTimeFormat: MMM Do h:mma
+				}
+				mci: {
+					VM1: { height: 15 }
+				}
+			}
+
+			mainMenuWhosOnline: {
+				config: {
+					listFormat: "|00|03{node:<6.6}|11{userName:<17.17}|03{affils:<19.19}|11{action:<20.20}|03{timeOn:<8}"
+				}
+				mci: {
+					VM1: { height: 10 }
+				}
+			}
+
+			mainMenuFeedbackToSysOp: {
+				0: {
+					mci: {
+						TL1: { width: 19, textOverflow: "..." }
+						ET2: { width: 19, textOverflow: "..." }
+						ET3: { width: 19, textOverflow: "..." }
+					}
+				}
+				1: {
+					mci: {
+						MT1: { height: 14 }
+					}
+				}
+			}
+
+			mainMenuOnelinerz: {
+				//	:TODO: Need way to just duplicate entry here & in menu.hjson, e.g. use: someName + must supply next/etc. in menu
+				config: {
+					listFormat: "|00|11{username:<12}|08: |03{oneliner:<59.58}"
+				}
+				0: {
+					mci: {
+						VM1: { height: 10 }
+						TM2: {
+							focusTextStyle: first lower
+						}						
+					}
+				}
+				1: {
+					mci: {
+						ET1: { width: 60 }
+						TL2: { width: 60 }
+						TM3: {
+							focusTextStyle: first lower
+						}
+					}
+				}
+			}
+
+			messageAreaMessageList: {
+				config: {
+					listFormat: "|00|15{msgNum:>4}  |03{subject:<28.27} |11{fromUserName:<20.20} |03{ts} |01|31{newIndicator}"
+					focusListFormat: "|00|19|15{msgNum:>4}  {subject:<28.27} {fromUserName:<20.20} {ts} {newIndicator}"
+					dateTimeFormat: ddd MMM Do
+				}
+				mci: {
+					VM1: {
+						height: 14
+					}
+				}
+			}
+
+			messageAreaChangeCurrentConference: {
+				config: {
+					listFormat: "|00|15{index} |07- |03{name}"
+					focusListFormat: "|00|19|15{index} - {name}"
+				}
+				mci: {
+					VM1: {
+						width: 26
+						height: 19
+					}
+				}
+			}
+
+			messageAreaChangeCurrentArea: {
+				config: {
+					listFormat: "|00|15{index} |07- |03{name}"
+					focusListFormat: "|00|19|15{index} - {name}"
+				}
+				mci: {
+					VM1: {
+						width: 26
+						height: 19
+					}
+				}
+			}
+
+			mailMenuCreateMessage: {
+				0: {
+					mci: {
+						TL1: { width: 19, textOverflow: "..." }
+						ET2: { width: 19, textOverflow: "..." }
+						ET3: { width: 19, textOverflow: "..." }
+					}
+				}
+				1: {
+					mci: {
+						MT1: { height: 14 }
+					}
+				}
+			}
+
+			mailMenuInbox: {
+				config: {
+					listFormat: "|00|15{msgNum:>4}  |03{subject:<28.27} |11{fromUserName:<20.20} |03{ts} |01|31{newIndicator}"
+					focusListFormat: "|00|19|15{msgNum:>4}  {subject:<28.27} {fromUserName:<20.20} {ts} {newIndicator}"
+					dateTimeFormat: ddd MMM Do
+				}
+				mci: {
+					VM1: {
+						height: 14
+					}
+				}
+			}
+
+			mainMenuRumorz: {
+				config: {
+					listFormat:      "|00|11  {rumor}"
+					focusListFormat: "|00|15> |14{rumor}"
+				}
+				0: {
+					mci: {
+						VM1: { height: 14 }
+						TM2: {
+							focusTextStyle: upper
+							items: [ "yes", "no" ]
+						}						
+					}
+				}
+				1: {
+					mci: {
+						ET1: { width: 60 }
+						TL2: { width: 60 }
+						TM3: {
+							focusTextStyle: upper
+						}
+					}
+				}
+			}
+
+			bbsList: {
+				config: {
+					listFormat: "|00|07{bbsName}"
+					focusListFormat: "|00|19|15{bbsName!styleFirstLower}"
+				}
+				0: {
+					mci: {
+						VM1: {
+							height: 11
+							width: 22
+							focusTextStyle: first upper
+						}
+						TL2: { width: 28 }
+						TL3: { width: 28 }
+						TL4: { width: 28 }
+						TL5: { width: 28 }
+						TL6: { width: 28 }
+						TL7: { width: 28 }
+						TL8: { width: 28 }
+						TL9: { width: 28 }						
+					}
+				},
+				1: {
+					mci: {
+						ET1: { width: 32 }
+						ET2: { width: 32 }
+						ET3: { width: 32 }
+						ET4: { width: 32 }
+						ET5: { width: 32 }
+						ET6: { width: 32 }
+						ET7: { width: 32 }
+						ET8: { width: 32 }
+
+						TM17: {
+							focusTextStyle: first upper
+						}
+					}
+				}
+			}
+
+
+			messageAreaViewPost: {
+				0: {
+					mci: {
+						TL1: { 
+							width: 19
+							textOverflow: ... 
+						}
+						TL2: {
+							width: 19
+							textOverflow: ...
+						}
+						TL3: { 
+							width: 19
+							textOverflow: ...
+						}
+						TL5: { 
+							width: 19
+							textOverflow: ...
+						}
+					}
+				}
+				1: {
+					mci: {
+						MT1: { height: 14 }
+					}
+				}
+				4: {
+					mci: {
+						HM1: {
+							focusTextStyle: first upper
+						}
+					}
+				}
+			}
+
+			messageAreaNewPost: {
+				0: {
+					mci: {
+						TL1: { width: 19, textOverflow: "..." }
+						ET2: { width: 19, textOverflow: "..." }
+						ET3: { width: 19, textOverflow: "..." }
+						//TL4: { width: 25 }
+					}
+				}
+				1: {
+					mci: {
+						MT1: { height: 14 }
+					}
+				}
+			}
+
+			messageAreaReplyPost: {
+				0: {
+					mci: {
+						TL1: { width: 19, textOverflow: "..." }
+						ET2: { width: 19, textOverflow: "..." }
+						ET3: { width: 19, textOverflow: "..." }
+						TL4: { width: 25, textOverflow: "..." }
+					}
+				}
+				1: {
+					mci: {
+						HM1: {
+							focusTextStyle: first lower
+						}
+					}
+				}
+			}
+
+
+			fullLoginSequenceLastCallers: {
+				config: {
+					listFormat: "|00|11{userName:<17.17}|03{location:<20.20}|11{affils:<17.17}|03{ts:<15}"
+					dateTimeFormat: MMM Do h:mma
+				}
+				mci: {
+					VM1: { height: 10 }
+				}
+			}
+
+			fullLoginSequenceWhosOnline: {
+				config: {
+					listFormat: "|00|03{node:<6.6}|11{userName:<17.17}|03{affils:<19.19}|11{action:<20.20}|03{timeOn:<8}"
+				}
+				mci: {
+					VM1: { height: 10 }
+				}
+			}
+
+			fullLoginSequenceSysStats: {
+
+			}
+
+			fullLoginSequenceUserStats: {
+				mci: {
+					UN1: { width: 17 }
+					UR2: { width: 17 }
+					LO3: { width: 17 }
+					UF4: { width: 17 }
+					UG5: { width: 17 }
+					UT6: { width: 17 }
+					UC7: { width: 17 }
+					ST8: { width: 17 }
+				}
+			}
+
+			mainMenuUserConfig: {
+				mci: {
+					ET1: { width: 27 }
+					ME2: { width: 27 }
+					ME3: { width: 27 }
+					ET4: { width: 27 }
+					ET5: { width: 27 }
+					ET6: { width: 27 }
+					ET7: { width: 27 }
+					ET8: { width: 27 }
+					ET9: { width: 27 }
+					ET10: { width: 18 }
+					ET11: { width: 18 }
+					TL20: { width: 71 }
+					TL21: { width: 43 }
+
+					TM25: {
+						focusTextStyle: first lower
+					}
+				}
+			}
+
+			newScanMessageList: {
+				config: {
+					listFormat: "|00|15  {msgNum:<5.5}|03{subject:<28.27} |15{fromUserName:<20.20} {ts}"
+					focusListFormat: "|00|19> |15{msgNum:<5.5}{subject:<28.27} {fromUserName:<20.20} {ts}"
+					dateTimeFormat: ddd MMM Do
+				}
+				mci: {
+					VM1: {
+						height: 14
+					}
+				}
+			}
+
+			ercClient: {
+				config: {
+					//chatEntryFormat: "|00|08[|03{bbsTag}|08] |10{userName}|08: |02{message}"
+				}
+			}
+		}
+
+		prompts: {
+			messageMenuCommand: {
+				mci: {
+					TL1: {
+						text: "|00|15|MD|08: |03|MC|08>>|11|MA"
+					}
+				}
+			}
+		}
+	}
+}
